@@ -1,0 +1,16 @@
+module.exports={
+    chainWebpack:config=>{
+        config.plugins.delete("prefetch")
+    },
+    devServer:{
+        proxy:{
+            '/':{
+                target:'http://127.0.0.1:3000/xhyw/v1',
+                //target:'http://www.gxinman.com:3000/xhyw/v1',
+                changeOrigin:true,
+                ws:true
+            }
+        },
+        disableHostCheck:true
+    }
+}
