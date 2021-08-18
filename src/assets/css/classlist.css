@@ -1,0 +1,233 @@
+.container {
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+}
+
+.card {
+  margin-bottom: 1.542vh;
+}
+.card .container > div:first-child {
+  overflow: hidden;
+  padding: 2.083vh 3.333vw 2.083vh 3.333vw;
+  border-radius: 1vh;
+  background-color: white;
+}
+.card .container > div:first-child .title {
+  height: 2.333vh;
+  margin-bottom: 2.667vh;
+  font-size: 2.333vh;
+  font-weight: bolder;
+  line-height: 2.333vh;
+  color: #000;
+}
+.card .container > div:first-child .content {
+  overflow: hidden;
+}
+.card .container > div:first-child .content .img {
+  float: left;
+  width: 28.888vw;
+  height: 11.75vh;
+  margin-right: 3.333vw;
+  border-radius: 0.8vh;
+  background-size: 100% auto;
+}
+.card .container > div:first-child .content .text {
+  float: right;
+  padding-top: 0.167vh;
+  height: 11.75vh;
+  width: 54.444vw;
+}
+.card .hr {
+  height: 1.917vh;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 1.917vh;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 10.917vh;
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+  padding-top: 6.583vh;
+  background-color: white;
+  line-height: 2.667vh;
+  text-align: center;
+  font-size: 2.417vh;
+  font-weight: bolder;
+  color: #333;
+}
+.head > img:nth-of-type(1) {
+  float: left;
+  width: 5.926vw;
+}
+.head > img:nth-of-type(2) {
+  float: right;
+  width: 5.926vw;
+}
+
+.outer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.outer .scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1vh;
+  bottom: 0;
+  padding-right: 1vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.classList .head {
+  z-index: 2;
+}
+.classList .head > img {
+  float: left;
+}
+.classList .pullDown {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding-top: 10.917vh;
+  height: 5.5vh;
+  background-color: white;
+  font-size: 1.75vh;
+  color: #333;
+  line-height: 5.5vh;
+}
+.classList .pullDown > div:first-child {
+  width: 50vw;
+  float: left;
+  text-align: center;
+}
+.classList .pullDown > div:last-child {
+  width: 50vw;
+  float: right;
+  text-align: center;
+}
+.classList .pullDown img {
+  width: 1.667vw;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.classList .pullDown .active {
+  color: #2fce6d;
+}
+.classList .select {
+  position: fixed;
+  z-index: 10;
+  top: 15.167vh;
+  bottom: 0;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.classList .select .container {
+  background-color: white;
+}
+.classList .select .container > ul {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  height: 0vh;
+  transition: all 0.5s;
+  background-color: white;
+}
+.classList .select .container > ul > li {
+  margin-top: 1.583vh;
+  height: 5vh;
+  width: 28.519vw;
+  background-color: #f3f3f3;
+  border-radius: 2.5vh;
+  line-height: 5vh;
+  font-size: 1.417vh;
+  text-align: center;
+}
+.classList .select .container > ul .active {
+  background-color: #ebfee5;
+  font-weight: bold;
+  color: #2fce6d;
+}
+.classList .list {
+  margin-top: 17.417vh;
+}
+.classList .card {
+  margin-top: 1vh;
+  margin-bottom: 0;
+}
+.classList .card .container .img {
+  position: relative;
+  overflow: hidden;
+  height: 15.5vh !important;
+}
+.classList .card .container .img > div {
+  border-radius: 0 0 1vh 0;
+  width: 18vw;
+  font-size: 1.5vh;
+  line-height: 2.5vh;
+  text-align: center;
+  color: white;
+}
+.classList .card .container .img > div:first-child {
+  background-image: linear-gradient(90deg, #d28336, #ecc5a6);
+}
+.classList .card .container .img > div:last-child {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.classList .card .container .price {
+  color: #2fce6d;
+  font-weight: bold;
+}
+.classList .card .container .price > span:first-child {
+  float: right;
+  font-size: 1.583vh;
+}
+.classList .card .container .price > span:last-child {
+  float: right;
+  font-size: 1.083vh;
+}
+.classList .card .container .text {
+  height: 15.5vh;
+  padding-top: 0 !important;
+}
+.classList .card .container .text > div:first-child {
+  margin-bottom: 0.9vh;
+  font-size: 2.167vh;
+  font-weight: bold;
+  color: #333;
+}
+.classList .card .container .text > div:nth-child(2) {
+  margin-bottom: 0.9vh;
+  font-size: 1.917vh;
+  color: #666666;
+}
+.classList .card .container .text > div:last-child {
+  font-size: 1.917vh;
+  color: #666666;
+}
+.classList .card .container .text > div:last-child > span {
+  display: inline-block;
+  padding-left: 1.111vw;
+}
+.classList .card .container .text > div:last-child > span > img {
+  margin-right: 0.5vw;
+  width: 3vw;
+}
+.classList .card .container > div {
+  margin-bottom: 1vh;
+}
+
+/*# sourceMappingURL=classlist.css.map */

@@ -1,0 +1,102 @@
+//主要红色
+$mainRed : #df2727;
+//页头绿
+$mainGreen : #2fce6d;
+//按钮背景浅绿
+$lightGreen :#ebfee5;
+//宽
+$width : 1080px;
+//高
+$height : 2400px;
+
+.container{
+    padding-left: 3.333vw;
+    padding-right: 3.333vw;
+}
+//卡片css样式
+.card{
+    margin-bottom: 1.542vh;
+    .container{
+        >div:first-child{
+            overflow: hidden;
+            padding: 2.083vh 3.333vw 2.083vh 3.333vw ;
+            border-radius: 1vh;
+            background-color: white;
+            .title{
+                // overflow: hidden;
+                height: 2.333vh;
+                margin-bottom: 2.667vh;
+                font-size: 2.333vh;
+                font-weight: bolder;
+                line-height: 2.333vh;
+                color: #000;
+            }
+            .content{
+                overflow: hidden;
+                .img{
+                    //:style中写背景图片样式
+                    float: left;
+                    width: 28.888vw;
+                    height: 11.75vh;
+                    margin-right: 3.333vw;
+                    // background-color:red;
+                    border-radius: 0.8vh;
+                    background-size: 100% auto;
+                }
+                .text{
+                    float: right;
+                    padding-top: 0.167vh;
+                    height: 11.75vh;
+                    width: 54.444vw;
+                }
+            }
+        }
+    }
+    .hr{
+        height: 1.917vh;
+        border-bottom: 1px solid #f0f0f0;
+        margin-bottom: 1.917vh;
+    }
+}
+//头部样式
+.head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 10.917vh;
+    padding-left: 3.333vw;
+    padding-right: 3.333vw;
+    padding-top: 6.583vh;
+    background-color: white;
+    line-height: 2.667vh;
+    text-align: center;
+    font-size: 2.417vh;
+    font-weight: bolder;
+    color: #333;
+    >img:nth-of-type(1){
+        float: left;
+        width : 5.926vw;
+    }
+    >img:nth-of-type(2){
+        float: right;
+        width: 5.926vw;
+    }
+}
+//隐藏滚动条
+.outer{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .scroll{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: -1vh;
+        bottom: 0;
+        padding-right: 1vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}

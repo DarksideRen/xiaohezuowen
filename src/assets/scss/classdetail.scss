@@ -1,0 +1,302 @@
+@import 'public.scss';
+$mainFontColor:#212832;
+$smallFontColor : #888c97;
+
+//下拉按钮动画
+@keyframes down{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(2.5vh);
+    }
+}
+@keyframes up{
+    0%{
+        transform: translateY(2.5vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.classDetail{
+    >div{
+        .head{
+            z-index:2;
+            font-size: 2.083vh;
+            text-align: center;
+            background-color: rgba(#fff,0) !important; 
+        }
+        .nav{
+            box-sizing: border-box;
+            position: fixed;
+            z-index:1;
+            top: 0vh;
+            height: 16.8vh;
+            padding-top: 12.917vh;
+            padding-bottom: 1.75vh;
+            background-color: rgba(#fff,1);
+            >a{
+                display: inline-block;
+                width: 33.333vw;
+                font-size: 1.75vh;
+                line-height: 2vh;
+                text-align: center;
+                color:$mainFontColor ;
+                >img{
+                    vertical-align: top;
+                    height: 2vh;
+                }
+            }
+            .active{
+                color: $mainGreen;
+            } 
+        }
+        .bigImg{
+            width: 100%;
+            height: 29.917vh;
+            background-size: cover;
+        }
+        .course{
+            padding-top: 2.083vh;
+            margin-bottom: 1vh;
+            font-size: 1.583vh;
+            background-color: #fff;
+            >div{
+                >div:nth-of-type(1){
+                    color: $mainGreen;
+                    margin-bottom: 1.25vh;
+                }
+                >div:nth-of-type(2){
+                    margin-bottom: 0.833vh;
+                    font-size: 2.333vh;
+                    font-weight: bolder;
+                    color: $mainFontColor;
+                }
+                >div:nth-of-type(3){
+                    margin-bottom: 1vh;
+                    color: $mainFontColor;
+                }
+                >div:nth-of-type(4){
+                    margin-bottom: 2.333vh;
+                    color: $smallFontColor;
+                    img{
+                        margin-left: 0.5vh;
+                        width: 2.963vw;
+                    }
+                }
+                >div:nth-of-type(5){
+                    padding-bottom: 1.583vh;
+                    color: $mainGreen;
+                    font-size: 2.083vh;
+                    font-weight: bolder;
+                }
+                >div:nth-of-type(6){
+                    color: $smallFontColor;
+                    height: 6.25vh;
+                    border-top: 0.125vh solid #f0f0f0;
+                    border-bottom: 0.125vh solid #f0f0f0;
+                    line-height: 6.25vh;
+                    span{
+                        margin-left: 3.519vw;
+                        display: inline-block;
+                        padding-left: 1.111vw;
+                        padding-right: 1.111vw;
+                        height: 2vh;
+                        border: 1px solid $mainGreen;
+                        border-radius: 0.808vh;
+                        background-color: $lightGreen;
+                        font-size: 1.167vh;
+                        line-height: 2vh;
+                        color: $mainGreen;
+                    }
+                }
+                >div:nth-of-type(7){
+                    height: 5.75vh;
+                    line-height:5.75vh ;
+                    color: $smallFontColor;
+                    span{
+                        margin-left: 3.519vw;
+                        line-height:5.75vh ;
+                        color: $mainFontColor;
+                    }
+                }
+            }
+        }
+        .teacher{
+            margin-bottom: 1vh;
+            background-color: #fff;
+            >div{
+                padding-top: 2.833vh;
+                padding-bottom: 1.917vh;
+                >div:nth-of-type(1){
+                    margin-bottom: 2.417vh;
+                    font-size: 2vh;
+                    font-weight: bolder;
+                    color: $mainFontColor;
+                }
+                >div:nth-of-type(2){
+                    position: relative;
+                    font-size: 0; 
+                    height: 5vh;
+                    >div:first-child{
+                        display: inline-block;
+                        height: 5vh;
+                        width: 5vh;
+                        border-radius: 50%;
+                        background-size: 100%;
+                        background-color: red;
+                    }
+                    >div:last-child{
+                        position: absolute;
+                        top: 50%;
+                        left: 14.259vw;
+                        transform: translateY(-50%);
+                        display: inline-block;
+                        font-size: 1.583vh;
+                    }
+                }
+            }
+        }
+        .syllabus{
+            margin-bottom: 1vh;
+            padding-top: 2.083vh;
+            background-color: #fff;
+            .container{
+                >div:first-child{
+                    font-size: 2vh;
+                    color:$mainFontColor;
+                    font-weight: bolder;
+                }
+                .list{
+                    padding-bottom: 2.5vh;
+                    overflow: hidden;
+                    padding-top: 2.583vh;
+                    border-bottom: 0.125vh solid #f0f0f0;
+                    >div:first-child{
+                        float: left;
+                        width: 17.778vw;
+                        color: $smallFontColor;
+                    }
+                    >div:last-child{
+                        float: left;
+                        width: 61.117vw;
+                        font-size: 1.5vh;
+                        color: $smallFontColor;
+                        >div{
+                            margin-bottom: 1.25vh;
+                            font-size: 2vh;
+                            font-weight: bolder;
+                            color: $mainFontColor;
+                        }  
+                    }
+                }
+            }
+            .shrink{
+                overflow: hidden;
+                height: 46.417vh;
+            }
+            .all{
+                position: relative;
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                font-size: 1.8vh;
+                color: $mainFontColor;
+                text-align: center;
+                >img{
+                    margin-top: 0.4vh;
+                    width: 4.444vw;
+                }
+                >div{
+                    position: absolute;
+                    top: 3.8vh;
+                    height: 0.5vh;
+                    opacity: 0.6;
+                    width: 100%;
+                    background-color: white;
+                }
+            }
+        }
+        
+        .detail{
+            position: relative;
+            #detail{
+                position: absolute;
+                top: -16.6vh;
+            }
+            >div{
+                padding: 2.083vh 0 2.083vh 3.333vw;
+                font-size: 2vh;
+                color: $mainFontColor;
+                background-color: white;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .tag{
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+            padding: 0.917vh 3.333vw 0.917vh 3.333vw;
+            background-color: white;
+            div{
+                box-sizing: border-box;
+                float: left;
+                width: 15.185vw;
+                height: 100%;
+                padding-left: 2.703vw;
+                padding-right: 2.703vw;
+                text-align : center;
+                font-size: 1.333vh;
+                color: $smallFontColor;
+                >img{
+                    width: 6.481vw;
+                }
+            }
+            .shopcar{
+                position: relative;
+                >a{
+                    display: inline-block;
+                    position: absolute;
+                    top:0;
+                    right: -0.5vh;
+                    width: 2vh;
+                    height: 2vh;
+                    border-radius: 50%;
+                    background-color: $mainRed;
+                    color: white;
+                    text-align: center;
+                    line-height: 2vh;
+                }
+                
+            }
+            >button{
+                padding: 0;
+                float: left;
+                height: 5vh;
+                width: 29.074vw;
+                font-size: 1.917vh;
+                color: white;
+                text-align: center;
+                line-height: 5vh;
+                border: none;
+            }
+            >button:nth-of-type(1){
+                margin-left: 4.5vw;
+                border-radius: 2.5vh 0 0 2.5vh;
+                background-color: #eeb541;
+            }
+            >button:last-child{
+                border-radius:  0 2.5vh 2.5vh 0;
+                background-color: $mainRed;
+            }
+        }
+    }
+    
+}
+.classDetail::-webkit-scrollbar { width: 0 !important ;
+
+display: none};
+
+   

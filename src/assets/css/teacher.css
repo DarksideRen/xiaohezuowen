@@ -1,0 +1,225 @@
+.container {
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+}
+
+.card {
+  margin-bottom: 1.542vh;
+}
+.card .container > div:first-child {
+  overflow: hidden;
+  padding: 2.083vh 3.333vw 2.083vh 3.333vw;
+  border-radius: 1vh;
+  background-color: white;
+}
+.card .container > div:first-child .title {
+  height: 2.333vh;
+  margin-bottom: 2.667vh;
+  font-size: 2.333vh;
+  font-weight: bolder;
+  line-height: 2.333vh;
+  color: #000;
+}
+.card .container > div:first-child .content {
+  overflow: hidden;
+}
+.card .container > div:first-child .content .img {
+  float: left;
+  width: 28.888vw;
+  height: 11.75vh;
+  margin-right: 3.333vw;
+  border-radius: 0.8vh;
+  background-size: 100% auto;
+}
+.card .container > div:first-child .content .text {
+  float: right;
+  padding-top: 0.167vh;
+  height: 11.75vh;
+  width: 54.444vw;
+}
+.card .hr {
+  height: 1.917vh;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 1.917vh;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 10.917vh;
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+  padding-top: 6.583vh;
+  background-color: white;
+  line-height: 2.667vh;
+  text-align: center;
+  font-size: 2.417vh;
+  font-weight: bolder;
+  color: #333;
+}
+.head > img:nth-of-type(1) {
+  float: left;
+  width: 5.926vw;
+}
+.head > img:nth-of-type(2) {
+  float: right;
+  width: 5.926vw;
+}
+
+.outer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.outer .scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1vh;
+  bottom: 0;
+  padding-right: 1vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.teacher > div .head {
+  background-color: rgba(255, 255, 255, 0);
+}
+.teacher > div .bg {
+  height: 19.167vh;
+  background-image: url(/img/teacher/bg.jpg);
+  background-size: auto 100%;
+}
+.teacher > div .main {
+  margin-bottom: 1vh;
+  background-color: #fff;
+  border-radius: 2vh 2vh 0 0;
+}
+.teacher > div .main .container {
+  position: relative;
+  padding-top: 1.417vh;
+  padding-bottom: 1.417vh;
+  font-size: 1.667vh;
+}
+.teacher > div .main .container .avatar {
+  box-sizing: border-box;
+  position: absolute;
+  top: -12.037vw;
+  padding-top: 0.926vw;
+  height: 24.074vw;
+  width: 24.074vw;
+  border-radius: 50%;
+  background-color: white;
+}
+.teacher > div .main .container .avatar > div {
+  height: 22.222vw;
+  width: 22.222vw;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-position-x: center;
+  background-size: 150%;
+}
+.teacher > div .main .container .guanzhu {
+  float: right;
+  width: 35.701vw;
+  height: 4vh;
+  border-radius: 2vh;
+  font-size: 1.917vh;
+  line-height: 4vh;
+  text-align: center;
+  color: white;
+  background-color: #2fce6d;
+}
+.teacher > div .main .container .tname {
+  margin-top: 5.833vh;
+  margin-bottom: 1.333vh;
+  font-size: 3vh;
+  font-weight: bolder;
+  color: #333;
+}
+.teacher > div .main .container .sub {
+  margin-bottom: 1.333vh;
+  color: #333;
+}
+.teacher > div .main .container .sub > span {
+  color: #999;
+}
+.teacher > div .main .container .infor1 {
+  margin-bottom: 1.333vh;
+}
+.teacher > div .main .container .school {
+  margin-bottom: 1.333vh;
+}
+.teacher > div .main .container .school > span {
+  border-radius: 2.37vh;
+  display: inline-block;
+  margin-right: 2.222vw;
+  padding-left: 2.407vw;
+  padding-right: 2.407vw;
+  line-height: 2.75vh;
+  color: #be8243;
+  background-color: #fff6ed;
+}
+.teacher > div .main .container .classlist {
+  border-top: 1px solid #e9e9e9;
+  margin-top: 2vh;
+  padding-top: 2.083vh;
+  font-size: 2vh;
+  font-weight: bolder;
+  color: #333;
+}
+.teacher > div .main .container .classlist .item {
+  margin-top: 3.333vw;
+  padding: 3.333vw;
+  font-size: 2.333vh;
+  background-color: #f9f9f9;
+}
+.teacher > div .main .container .classlist .item > span {
+  margin-right: 1vh;
+  border-radius: 0.5vh;
+  display: inline-block;
+  padding-left: 0.75vw;
+  padding-right: 0.75vw;
+  background-color: #be8243;
+  font-size: 1.667vh;
+  line-height: 2vh;
+  color: white;
+}
+.teacher > div .main .container .classlist .item > div {
+  margin-top: 1.583vh;
+  color: #999;
+  font-size: 1.667vh;
+}
+.teacher > div .main .container .classlist .item > div > div {
+  float: right;
+  font-size: 1.75vh;
+  font-weight: bolder;
+  color: #2fce6d;
+}
+.teacher > div .main .container .classlist .item > div > div > span {
+  font-size: 1.25vh;
+}
+.teacher > div .introduce {
+  background-color: #fff;
+}
+.teacher > div .introduce > div {
+  padding-top: 1.833vh;
+}
+.teacher > div .introduce > div :first-child {
+  margin-bottom: 1vh;
+  text-align: center;
+  font-size: 2.333vh;
+  font-weight: bolder;
+  color: #333;
+}
+.teacher > div .introduce > div :last-child {
+  padding: 0 3.333vw 3.333vw 3.333vw;
+  font-size: 1.667vh;
+  line-height: 1.5;
+  color: #999;
+}
+
+/*# sourceMappingURL=teacher.css.map */

@@ -1,0 +1,152 @@
+@import 'public.scss';
+$fontcolor : #333;
+.classList{
+    .head{
+        z-index: 2;
+        >img{
+            float: left;
+        }
+    }
+    .pullDown{
+        position: fixed;
+        top:0;
+        z-index: 1;
+        padding-top:10.917vh ;
+        height: 5.5vh;
+        background-color: white;
+        font-size: 1.75vh;
+        color: $fontcolor;
+        line-height: 5.5vh;
+        // font-weight: bold;
+        >div:first-child{
+            width: 50vw;
+            float: left;
+            text-align: center;
+        }
+        >div:last-child{
+            width: 50vw;
+            float: right;
+            text-align: center;
+        }
+        img{
+            width: 1.667vw;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        .active{
+            color: $mainGreen;
+        }
+    }
+    .select{
+        position: fixed;
+        z-index: 10;
+        top: 15.167vh;
+        bottom: 0;
+        height: 80vh;
+        background-color: rgba(0,0,0,0.2);
+        .container{
+            background-color: white;
+            >ul{
+                overflow: hidden;
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: flex-start;
+                height: 0vh;
+                transition: all 0.5s;
+                background-color: white;
+                >li{
+                    margin-top:1.583vh; ;
+                     height: 5vh;
+                     width: 28.519vw;
+                     background-color: #f3f3f3; 
+                     border-radius: 2.5vh; 
+                     line-height: 5vh;
+                     font-size: 1.417vh; 
+                     text-align: center;
+                }
+                .active{
+                    background-color: $lightGreen;
+                    font-weight: bold;
+                    color: $mainGreen;
+                }
+            }
+        }
+    }
+    .list{
+        margin-top:17.417vh ;
+    }
+    .card{
+        margin-top: 1vh;
+        margin-bottom: 0;
+        .container{
+            .img{
+                position: relative;
+                overflow: hidden;
+                height:15.5vh !important;
+                >div{
+                    border-radius: 0 0 1vh 0;
+                    width: 18vw;
+                    font-size: 1.5vh;  
+                    line-height: 2.5vh; 
+                    text-align: center;
+                    color: white;
+                }
+                >div:first-child{
+                    background-image: linear-gradient(90deg,#d28336,#ecc5a6);
+                }
+                >div:last-child{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.6);
+                }
+            }
+            .price{
+                color :$mainGreen;
+                font-weight: bold;
+                >span:first-child{
+                    float: right;
+                    font-size: 1.583vh;
+                }
+                >span:last-child{
+                    float: right;
+                    font-size: 1.083vh;                
+                }
+            }
+            .text{
+                height: 15.5vh;
+                padding-top: 0 !important;
+                >div:first-child{
+                    margin-bottom: 0.9vh;
+                    font-size: 2.167vh;
+                    font-weight: bold;
+                    color: $fontcolor;
+                }
+                >div:nth-child(2){
+                    margin-bottom: 0.9vh;
+                    font-size:1.917vh ;
+                    color: #666666;
+                }
+                >div:last-child{
+                    font-size:1.917vh ;
+                    color: #666666;
+                    >span{
+                        display: inline-block;
+                        padding-left: 1.111vw;
+                        >img{
+                            margin-right:0.5vw ;
+                            width: 3vw;
+                        }
+                    
+                    }
+                }
+            }
+            >div{
+                margin-bottom: 1vh;
+            }
+        }
+    }
+}

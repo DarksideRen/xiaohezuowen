@@ -1,0 +1,523 @@
+.container {
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+}
+
+.card {
+  margin-bottom: 1.542vh;
+}
+.card .container > div:first-child {
+  overflow: hidden;
+  padding: 2.083vh 3.333vw 2.083vh 3.333vw;
+  border-radius: 1vh;
+  background-color: white;
+}
+.card .container > div:first-child .title {
+  height: 2.333vh;
+  margin-bottom: 2.667vh;
+  font-size: 2.333vh;
+  font-weight: bolder;
+  line-height: 2.333vh;
+  color: #000;
+}
+.card .container > div:first-child .content {
+  overflow: hidden;
+}
+.card .container > div:first-child .content .img {
+  float: left;
+  width: 28.888vw;
+  height: 11.75vh;
+  margin-right: 3.333vw;
+  border-radius: 0.8vh;
+  background-size: 100% auto;
+}
+.card .container > div:first-child .content .text {
+  float: right;
+  padding-top: 0.167vh;
+  height: 11.75vh;
+  width: 54.444vw;
+}
+.card .hr {
+  height: 1.917vh;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 1.917vh;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 10.917vh;
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+  padding-top: 6.583vh;
+  background-color: white;
+  line-height: 2.667vh;
+  text-align: center;
+  font-size: 2.417vh;
+  font-weight: bolder;
+  color: #333;
+}
+.head > img:nth-of-type(1) {
+  float: left;
+  width: 5.926vw;
+}
+.head > img:nth-of-type(2) {
+  float: right;
+  width: 5.926vw;
+}
+
+.outer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.outer .scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1vh;
+  bottom: 0;
+  padding-right: 1vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  3% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  14% {
+    transform: translateY(0px);
+  }
+  18% {
+    transform: translateY(-3.8vh);
+  }
+  32% {
+    transform: translateY(-3.8vh);
+  }
+  36% {
+    transform: translateY(-7.6vh);
+  }
+  50% {
+    transform: translateY(-7.6vh);
+  }
+  54% {
+    transform: translateY(-11.4vh);
+  }
+  68% {
+    transform: translateY(-11.4vh);
+  }
+  72% {
+    transform: translateY(-15.2vh);
+  }
+  86% {
+    transform: translateY(-15.2vh);
+  }
+  90% {
+    transform: translateY(-19vh);
+  }
+  97% {
+    transform: translateY(-19vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-19vh);
+    opacity: 0;
+  }
+}
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 4.375vh;
+  width: 100vw;
+  padding-top: 5.458vh;
+  background-color: #2fce6d;
+  color: white;
+}
+header .grade {
+  position: relative;
+  float: left;
+  height: 3.875vh;
+  width: 10.93vw;
+  line-height: 3.8vh;
+  font-size: 1.917vh;
+  font-weight: bolder;
+}
+header .grade a {
+  position: absolute;
+  right: 0;
+  bottom: 1.083vh;
+  float: right;
+  width: 1.481vw;
+  height: 1.481vw;
+  background-image: url(../img/index/delta2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+header .search {
+  overflow: hidden;
+  box-sizing: border-box;
+  float: right;
+  width: 80.185vw;
+  height: 3.8vh;
+  padding-left: 7.778vw;
+  border-radius: 1.9375vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url(../../assets/img/index/search.png);
+  background-repeat: no-repeat;
+  background-size: 1.667vh;
+  background-position-y: center;
+  background-position-x: 2.6vw;
+  font-size: 1.75vh;
+  color: white;
+}
+header .search .textSwipe {
+  animation: swipe 20s linear infinite backwards;
+}
+header .search li {
+  height: 3.8vh;
+  line-height: 3.8vh;
+}
+header .popup {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding-top: 24.417vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+header .popup > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 3.917vh;
+  padding-left: 6.11vw;
+  padding-right: 6.11vw;
+  padding-bottom: 2vh;
+  width: 88.889vw;
+  height: 56.917vh;
+  border-radius: 1vh;
+  background-color: white;
+  color: #333;
+}
+header .popup > div > div:first-child {
+  font-size: 2.667vh;
+  font-weight: bolder;
+  text-align: center;
+}
+header .popup > div .type {
+  margin-top: 3.5vh;
+  font-size: 1.833vh;
+  font-weight: bolder;
+}
+header .popup > div .type > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 2vh;
+  height: 9.5vh;
+  font-weight: normal;
+}
+header .popup > div .type > ul > li {
+  width: 23.333vw;
+  border-radius: 2vh;
+  line-height: 4vh;
+  font-size: 1.917vh;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+header .popup > div .type > ul .active {
+  font-weight: bolder;
+  color: #2fce6d;
+  background-color: #ebfee5;
+}
+header .popup > div > div:last-child > ul {
+  height: 4vh;
+}
+
+nav {
+  padding-top: 9.833vh;
+}
+nav .van-grid .van-grid-item {
+  margin: 0 !important;
+}
+nav .van-grid .van-grid-item__content--center {
+  padding-bottom: 0;
+  padding-top: 1.583vh;
+  background-color: #f7f7f7;
+}
+nav .van-grid .van-grid-item__text {
+  font-size: 1.583vh;
+  color: #333;
+}
+
+.swipe {
+  margin-top: 1.833vh;
+  margin-bottom: 1.542vh;
+}
+.swipe .my-swipe {
+  overflow: hidden;
+  border-radius: 1vh;
+}
+.swipe .my-swipe .van-swipe__track .van-swipe-item {
+  height: 24.833vh;
+}
+.swipe .my-swipe .van-swipe__track .van-swipe-item img {
+  width: 100%;
+}
+
+.summerCamp .title > div {
+  float: right;
+  font-size: 0.625vh;
+  color: #999;
+}
+.summerCamp .title > div span {
+  height: 2.167vh;
+  width: 2.167vh;
+  display: inline-block;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  border-radius: 2px;
+}
+.summerCamp .content .text > div:first-child {
+  height: 2.167vh;
+  margin-bottom: 1.833vh;
+}
+.summerCamp .content .text > div:first-child > div {
+  float: left;
+  width: 11.944vw;
+  background-color: #e1ba91;
+  border-radius: 0.5vh;
+  text-align: center;
+  line-height: 2.167vh;
+  font-size: 1.583vh;
+  color: white;
+}
+.summerCamp .content .text > div:first-child span {
+  overflow: hidden;
+  float: right;
+  width: 41.481vw;
+  height: 100%;
+  line-height: 2.167vh;
+  font-size: 2.083vh;
+  font-weight: bolder;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.summerCamp .content .text > div:nth-of-type(2) {
+  height: 4.583vh;
+  font-size: 1.583vh;
+  color: #999;
+}
+.summerCamp .content .text > div:last-child > span:first-child {
+  font-size: 1.25vh;
+  font-weight: bolder;
+  line-height: 3vh;
+  color: #df2727;
+}
+.summerCamp .content .text > div:last-child > span:nth-of-type(2) {
+  font-size: 2vh;
+  color: #df2727;
+  line-height: 3vh;
+  font-weight: bolder;
+}
+.summerCamp .content .text > div:last-child button {
+  float: right;
+  width: 17.593vw;
+  height: 3vh;
+  background-color: #df2727;
+  border: none;
+  border-radius: 1.5vh;
+  font-size: 1.583vh;
+  font-weight: bold;
+  color: white;
+}
+
+.fineClass .content {
+  display: flex;
+  justify-content: space-between;
+}
+.fineClass .content > div {
+  overflow: hidden;
+  width: 27.5vw;
+  height: 14.83vh;
+  background-color: #f7f7f7;
+  border-radius: 1vh;
+}
+.fineClass .content > div > div:first-child {
+  width: 10vw;
+  height: 2.25vh;
+  border-radius: 0 0 1vh 0;
+  background-color: #e1ba91;
+  text-align: center;
+  line-height: 2.25vh;
+  font-size: 1.417vh;
+  color: white;
+}
+.fineClass .content > div > div:nth-of-type(2) {
+  margin-top: 1.4vh;
+  margin-left: 2.037vw;
+  font-size: 1.75vh;
+  font-weight: bolder;
+}
+.fineClass .content > div > div:nth-of-type(3) {
+  margin-top: 1.5vh;
+  margin-left: 2.037vw;
+  font-size: 1.583vh;
+}
+.fineClass .content > div > div:last-child {
+  margin-top: 2.1vh;
+  margin-left: 2.037vw;
+  font-size: 1.583vh;
+  color: #be8243;
+}
+.fineClass .content > div > div:last-child img {
+  width: 1.296vw;
+  margin-left: 1.296vw;
+}
+
+.onlineSchool {
+  margin-bottom: 4.417vh;
+}
+.onlineSchool .img {
+  height: 15.5vh !important;
+}
+.onlineSchool .text {
+  position: relative;
+  height: 15.5vh !important;
+  padding-top: 0;
+  font-size: 1.583vh;
+}
+.onlineSchool .text > div:first-child {
+  margin-bottom: 1.083vh;
+  line-height: 2.167vh;
+  font-size: 2.083vh;
+  font-weight: bolder;
+}
+.onlineSchool .text > div:nth-of-type(2) {
+  overflow: hidden;
+  margin-bottom: 1.083vh;
+}
+.onlineSchool .text > div:nth-of-type(2) span {
+  float: left;
+  height: 100%;
+  padding: 0 1.296vw;
+  background-color: #f9f5ec;
+  border-radius: 0.5vh;
+  line-height: 2.167vh;
+  color: #be8243;
+}
+.onlineSchool .text > div:nth-of-type(2) span:nth-of-type(2) {
+  margin-left: 1.667vw;
+}
+.onlineSchool .text > div:nth-of-type(3) {
+  line-height: 1.5;
+  color: #999;
+}
+.onlineSchool .text > div:last-child {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 54.444vw;
+  padding: 0 1.296vw;
+  background-color: #f1f8ff;
+  border-radius: 0.5vh;
+  color: #3186fa;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.onlineSchool .go {
+  position: relative;
+  margin-top: 1.5vh;
+  padding-top: 1.083vh;
+  padding-bottom: 1.083vh;
+  background-color: #f7f7f7;
+  border-radius: 1vh;
+}
+.onlineSchool .go > span:first-child {
+  height: 100%;
+  padding: 0 1.296vw;
+  margin-left: 3.889vw;
+  margin-right: 1.167vw;
+  font-size: 1.583vh;
+  text-align: center;
+  background-color: #e1ba91;
+  border-radius: 0.5vh;
+  color: white;
+}
+.onlineSchool .go > span:nth-of-type(2) {
+  font-size: 1.917vh;
+}
+.onlineSchool .go > div {
+  margin-left: 2.037vw;
+  margin-top: 1.75vh;
+  font-weight: bolder;
+  font-size: 1.25vh;
+  color: #df2727;
+}
+.onlineSchool .go > div > span {
+  font-size: 1.75vh;
+}
+.onlineSchool .go > button {
+  position: absolute;
+  top: 50%;
+  right: 3.148vw;
+  margin-top: -1.5vh;
+  padding: 0 3.333vw;
+  background-color: #df2727;
+  border: none;
+  border-radius: 1.5vh;
+  color: white;
+  font-size: 1.583vh;
+  line-height: 3vh;
+}
+.onlineSchool .more {
+  margin-top: 3vh;
+  text-align: center;
+  color: #be8243;
+}
+
+.foot > div div {
+  margin: 0 auto;
+  text-align: center;
+}
+.foot > div > div:first-child {
+  margin-bottom: 2.167vh;
+  font-weight: bolder;
+  font-size: 2.333vh;
+}
+.foot > div > div:nth-of-type(2) {
+  margin-bottom: 3.917vh;
+  width: 77.593vw;
+  border-radius: 2.5vh;
+  font-size: 2.167vh;
+  line-height: 5vh;
+  color: #be8243;
+  background-color: white;
+}
+.foot > div > div:last-child {
+  margin-bottom: 9.917vh;
+  font-size: 1.5vh;
+  color: #888c95;
+}
+
+/*# sourceMappingURL=index.css.map */

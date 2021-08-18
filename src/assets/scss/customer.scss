@@ -1,0 +1,77 @@
+@import 'public.scss';
+.customer{
+    .talk{
+        margin-top: 10.9vh;
+        margin-bottom:8.5vh ;
+        overflow: auto;
+        height: 81.1vh;
+        
+        >div{
+            overflow: hidden;
+            >span{
+                max-width:75vw ;
+                display: inline-block;
+                padding: 1vh;
+                margin-top: 1vh;
+                border-radius: 0.5vh;
+                font-size: 2vh;
+            }
+            >a{
+                display: inline-block;
+                border-radius: 50%;
+                margin-top: 1vh;
+                height: 4vh;
+                width: 4vh;
+                background-size: 100% auto;
+            }
+        }
+        .me{
+            padding-right: 3.333vw;
+            >a{
+                float: right;
+            }
+            >span{
+                float: right;
+                margin-right: 1vh;
+                background-color: $mainGreen;
+            }
+        }
+        .custom{
+            padding-left: 3.333vw;
+            >a{
+                float: left;
+            }
+            >span{
+                float:left;
+                margin-left: 1vh;
+                background-color: white;
+            }
+        }
+    }
+    .in{
+        position: fixed;
+        bottom: 0;
+        background-color: #f5f5f5;
+        border-top: 3px solid #f0f0f0;
+        height: 8vh;
+        width: 100vh;
+        input{
+            margin-left: 3.333vw;
+            margin-top: 1.5vh;
+            height: 5vh;
+            width: 75vw;
+            background-color: #fff;
+            border: none;
+            border-radius: 0.5vh;
+            font-size: 2vh;
+        }
+        button{
+            margin-left: 4vw;
+            height: 4vh;
+            border:none;
+            border-radius: 0.5vh;
+            background-color: $mainGreen;
+            color: white;
+        }
+    }
+}

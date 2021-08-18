@@ -1,0 +1,66 @@
+@import 'public.scss';
+$otherText : #999;
+$font38 :1.583vh;
+
+.teacherlist{
+    .head{
+        z-index: 10;
+        background-color: #fff;
+    }
+    .card{
+        margin-top: 11.9vh;
+        .content{
+            .img{
+                height: 15.5vh !important;
+            }
+            .text{
+                position: relative;
+                height: 15.5vh !important;
+                padding-top: 0;
+                font-size: $font38;
+                >div:first-child{
+                    margin-bottom: 1.083vh;
+                    line-height: 2.167vh;
+                    font-size: 2.083vh;
+                    font-weight: bolder;
+                }
+                >div:nth-of-type(2){
+                    overflow: hidden;
+                    margin-bottom: 1.083vh;
+                    span{
+                        float: left;
+                        height: 100%;
+                        padding: 0 1.296vw;
+                        background-color: #f9f5ec;
+                        border-radius: 0.5vh;
+                        // text-align: center;
+                        line-height: 2.167vh;
+                        // font-size: 1.583vh;
+                        color:#be8243 ;
+                    }
+                    span:nth-of-type(2){
+                        margin-left: 1.667vw;
+                    }
+                }
+                >div:nth-of-type(3){
+                    // font-size: $font38;
+                    line-height: 1.5;
+                    color: $otherText;
+                }
+                >div:last-child{
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    position: absolute;
+                    bottom: 0;
+                    width: 54.444vw;
+                    padding: 0 1.296vw;
+                    background-color: #f1f8ff;
+                    border-radius: 0.5vh;
+                    color: #3186fa;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

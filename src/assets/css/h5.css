@@ -1,0 +1,93 @@
+.container {
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+}
+
+.card {
+  margin-bottom: 1.542vh;
+}
+.card .container > div:first-child {
+  overflow: hidden;
+  padding: 2.083vh 3.333vw 2.083vh 3.333vw;
+  border-radius: 1vh;
+  background-color: white;
+}
+.card .container > div:first-child .title {
+  height: 2.333vh;
+  margin-bottom: 2.667vh;
+  font-size: 2.333vh;
+  font-weight: bolder;
+  line-height: 2.333vh;
+  color: #000;
+}
+.card .container > div:first-child .content {
+  overflow: hidden;
+}
+.card .container > div:first-child .content .img {
+  float: left;
+  width: 28.888vw;
+  height: 11.75vh;
+  margin-right: 3.333vw;
+  border-radius: 0.8vh;
+  background-size: 100% auto;
+}
+.card .container > div:first-child .content .text {
+  float: right;
+  padding-top: 0.167vh;
+  height: 11.75vh;
+  width: 54.444vw;
+}
+.card .hr {
+  height: 1.917vh;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 1.917vh;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 10.917vh;
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+  padding-top: 6.583vh;
+  background-color: white;
+  line-height: 2.667vh;
+  text-align: center;
+  font-size: 2.417vh;
+  font-weight: bolder;
+  color: #333;
+}
+.head > img:nth-of-type(1) {
+  float: left;
+  width: 5.926vw;
+}
+.head > img:nth-of-type(2) {
+  float: right;
+  width: 5.926vw;
+}
+
+.outer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.outer .scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1vh;
+  bottom: 0;
+  padding-right: 1vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.h5 > img {
+  margin-top: 10.917vh;
+  width: 100%;
+}
+
+/*# sourceMappingURL=h5.css.map */
